@@ -36,3 +36,15 @@ __pycache__/
 *.json
 *.log
 
+
+
+
+env/
+*.srt
+*.mp4
+*.json
+__pycache__/
+*.log
+*.env
+
+
