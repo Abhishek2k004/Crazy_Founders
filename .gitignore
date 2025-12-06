@@ -1,0 +1,28 @@
+# Virtual envs
+whisperenv/
+myenv/
+.venv/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Video and audio files
+*.mp4
+*.mkv
+*.avi
+*.mov
+*.wav
+*.mp3
+
+# Generated folders
+clips/
+final_output/
+Reel_Worthy/
+video.mp4
+audio.wav
+transcript.json
+
+# VSCode settings
+.vscode/
+.idea/
