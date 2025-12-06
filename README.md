@@ -1,4 +1,6 @@
-![Crazy Founders AI Reel Generator](https://via.placeholder.com/1200x300.png?text=Crazy+Founders+AI+Reel+Generator)
+<p align="center">
+  <img src="assets/banner.png" width="100%" alt="Crazy Founders – AI Reel Generator Banner">
+</p>
 
 
 🎯 Overview
