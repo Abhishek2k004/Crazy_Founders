@@ -26,3 +26,13 @@ transcript.json
 # VSCode settings
 .vscode/
 .idea/
+
+
+
+env/
+__pycache__/
+*.srt
+*.mp4
+*.json
+*.log
+

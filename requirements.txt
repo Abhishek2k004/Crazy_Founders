@@ -1,0 +1,8 @@
+openai
+python-dotenv
+opencv-python
+ffmpeg-python
+moviepy
+whisper-timestamped
+tiktoken
+numpy
