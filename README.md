@@ -1,84 +1,74 @@
-
-
-
+🚀 Crazy Founders – AI Reel Generator
+Cut, caption & convert long videos into Instagram-ready reels — automatically.
+<p align="center"> <img src="https://raw.githubusercontent.com/Abhishek2k004/Crazy_Founders/5ef67092f86a1a5cade9366b004e4324e34b80c4/banner.jpg" width="900"> </p>
 🎯 Overview
 
-Crazy Founders – AI Reel Generator is an end-to-end automated pipeline that:
+Crazy Founders – AI Reel Generator is a fully automated system that transforms long-form videos into short, Instagram-optimized reels.
+
+The pipeline:
 
 ✔ Extracts audio
-✔ Generates transcript using Whisper
-✔ Identifies viral moments using Indian slang + hook scoring
+✔ Transcribes using Whisper
+✔ Detects viral hooks (Indian slang-aware)
 ✔ Cuts clips with FFmpeg
-✔ Creates SRT subtitles
-✔ Auto-burns subtitles in portrait reel format
-✔ Generates Indian-style captions & hashtags using AI
-✔ Outputs Instagram-ready reels
+✔ Generates SRT subtitles
+✔ Burns subtitles into portrait reels
+✔ Generates captions + regional hashtags
+✔ Outputs polished Instagram-ready reels
 
-This tool is built for content creators, founders, podcast teams, and agencies.
+Built for creators, founders, YouTubers, podcast teams, and content agencies.
 
-✨ Features
+✨ Key Features
+
 🎬 Intelligent Clip Detection (India-focused)
-
-Detects hooks like “sun na”, “vinandi”, “shono”, “bhau”
-
-Scores emotional, humorous, or high-engagement moments
-
-Filters intro or filler content
+Detects Indian hook-phrases like:
+“sun na”
+“vinandi”
+“shono”
+“bhau”
+Ranks emotional, humorous, or high-engagement moments.
+Skips filler content.
 
 🧠 AI Caption Generator
-
 Generates platform-optimized captions
-
-Produces regional hashtags (Hindi, Tamil, Telugu, Bengali, Kannada…)
-
-Includes trending-style lines
+Adds trending regional hashtags (Hindi, Tamil, Telugu, Bengali, Kannada…)
+Provides reel-style punchlines
 
 📝 Auto Subtitles
-
-SRT creation from transcript
-
-Burned subtitles with:
-
-Bold white text
-
+Creates SRT from transcript
+Burned subtitles include:
+Bold white captions
 Black outline
+Center/bottom safe-zone alignment
 
-Center/Bottom alignment
-
-📱 Auto Portrait Reel Formatting
-
-Converts horizontal → portrait (1080×1920)
-
+📱 Instagram Reel Formatting (1080×1920)
+Converts landscape → portrait
 Adds clean padding
-
-Ensures Instagram safe-area layout
-
+Ensures safe-area captions
 🚀 Fully Automated Pipeline
 
-Just run:
-
+Run everything with:
 python run_pipeline.py
+Output is saved to:
+final_output/
 
-
-And it outputs everything into final_output/.
-
-🗂️ Project Structure
+📁 Project Structure
 Crazy_Founders/
 │
 ├── caption_generator.py      # AI captions + hashtags
-├── reel_selector.py          # Indian slang-based clip scoring
-├── subtitles.py              # SRT generation + burned captions
-├── audio_extractor.py        # Extract audio from MP4
-├── transcribe.py             # Whisper transcript generator
+├── reel_selector.py          # Indian slang scoring
+├── subtitles.py              # SRT creation + burning
+├── audio_extractor.py        # Extract audio
+├── transcribe.py             # Whisper transcription
 ├── run_pipeline.py           # Full automation
 │
-├── video.mp4                 # Input video (you provide)
+├── video.mp4                 # Input video
 ├── transcript.json           # Whisper output
-├── clips/                    # Auto-generated clips
-└── final_output/             # Final reels + SRTs
+├── clips/                    # Auto clips
+└── final_output/             # Final reels
 
-⚙️ Installation
-1️⃣ Clone repo
+⚙️ Installation Guide
+1️⃣ Clone the repo
 git clone https://github.com/Abhishek2k004/Crazy_Founders.git
 cd Crazy_Founders
 
@@ -89,44 +79,20 @@ env\Scripts\activate
 3️⃣ Install dependencies
 pip install -r requirements.txt
 
-🔑 Environment Variable Setup
-
+🔑 Environment Variables
 Create .env file:
-
 OPENAI_API_KEY=your_key_here
 
 
-Never commit this file.
+⚠️ Never commit this file.
 
-▶️ How to Run the Full Pipeline
-
-Place your input video:
-
+▶️ Run the Pipeline
+Place your input file:
 video.mp4
 
 
-Then run:
-
+Start processing:
 python run_pipeline.py
-
-
-Pipeline steps:
-
-Extract audio
-
-Generate transcript
-
-Score and find best reel-worthy clips
-
-Cut video using FFmpeg
-
-Create subtitles (SRT)
-
-Burn subtitles into final video
-
-Generate captions + hashtags
-
-Save everything under final_output/
 
 📂 Output Example
 final_output/
@@ -135,54 +101,27 @@ final_output/
 ├── clip_1.srt
 ├── clip_1_subtitled.mp4
 ├── clip_1_caption.json
-│
-├── clip_2.mp4
 ├── clip_2_subtitled.mp4
 └── ...
 
-📸 Screenshots (Add Later)
-![Workflow](https://via.placeholder.com/1000x500.png?text=Pipeline+Workflow)
-![Output Example](https://via.placeholder.com/600x800.png?text=Reel+Output+Preview)
-
-🤝 Contributing (For Your Team)
-
-Clone repo
-
-Create a new branch:
-
-git checkout -b feature-xyz
-
-
-Work on your feature
-
-Commit changes:
-
+🤝 Contributing (Team Workflow)
+git checkout -b feature-name
 git add .
-git commit -m "Added feature XYZ"
+git commit -m "Added feature-name"
+git push origin feature-name
 
 
-Push your branch:
+Then open a Pull Request.
 
-git push origin feature-xyz
+🧪 Upcoming Features
+🎵 Auto background music
+✨ Subtitle animations
+🎚️ Reframe + zoom-cuts
+🧩 AI scene segmentation
+☁️ FastAPI backend
 
+🖥️ Web dashboard
 
-Create a Pull Request (PR) on GitHub
+👨‍💻 Built with ❤️ by Crazy Founders Team
 
-🧪 Upcoming Features (Roadmap)
-
-🎵 Auto background music insertion
-
-🎨 Dynamic subtitle animations
-
-🎚️ Reframing + zoom cuts
-
-🧩 AI scene detection
-
-☁️ Cloud deployment (FastAPI backend)
-
-📝 Web UI dashboard
-
-🧑‍💻 Built by
-
-Crazy Founders Team
-For India-first AI video automation
+Focused on India-first AI video automation.
