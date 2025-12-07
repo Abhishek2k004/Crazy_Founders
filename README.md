@@ -1,4 +1,4 @@
-<p align="center"> <img src="https://raw.githubusercontent.com/Abhishek2k004/Crazy_Founders/main/banner.png" width="90%" /> </p>
+
 
 
 🎯 Overview
